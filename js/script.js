@@ -1,6 +1,6 @@
 
 
-const numberOfFilms = 'How many movies have you watched already?';
+const numberOfFilms = promt('How many movies have you watched already?', '');
 
 const personalMovieDB = {
     'count': numberOfFilms,
