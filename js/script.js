@@ -12,6 +12,8 @@ const personalMovieDB = {
 
 const a = prompt('One of the last movies you watched?', '');
 const b = prompt('How much would you rate it?', '');
+const c = prompt('One of the last movies you watched?', '');
+const d = prompt('How much would you rate it?', '');
 
 personalMovieDB.movies[a] = b;
 
