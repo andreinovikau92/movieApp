@@ -23,6 +23,14 @@ for(let i = 0; i < 2; i++) {
     }
 }
 
-
+if(personalMovieDB.count < 10) {
+    console.log('Watched quite a few films');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    console.log('You are a classic spectator');
+} else if (personalMovieDB.count > 30) {
+    console.log('You are a movie buff!');
+} else {
+    console.log('Error');
+}
 
 console.log(personalMovieDB);
