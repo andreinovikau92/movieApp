@@ -2,7 +2,7 @@
 
 let numberOfFilms;
 
-function start() {
+function start () {
     
     numberOfFilms = +prompt('How many movies have you watched already?', '');
 
@@ -38,7 +38,7 @@ function rememberMyFilms () {
 
 //rememberMyFilms();
 
-function detectPersonalLevel() {
+function detectPersonalLevel () {
     if(personalMovieDB.count < 10) {
         console.log('Watched quite a few films');
     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
@@ -59,3 +59,12 @@ function showMyDB (hidden) {
 }
 
 showMyDB(personalMovieDB.privat);
+
+function writeYourGenres () {
+    for(let i = 1; i <= 3; i++) {
+        const genre = prompt(`Your favorite movie by number ${i}`, '');
+        personalMovieDB.geners[i - 1] = genre;
+    }
+}
+
+writeYourGenres();
